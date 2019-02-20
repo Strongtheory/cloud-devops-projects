@@ -1,9 +1,12 @@
+Note: This is very similar to the aws project however all resources with the exception of the terraform state files and docker images
+      are provisioned on Azure.
+
 Technologies:
-* AWS
+* Azure
 * Terraform: This is IaaC to spawn the reources on Azure.
 * NestJS: REST API framework similar to express in nodejs.
 * CircleCI: Devops tool to handle Continuous integration and development.
-* EKS: AWS Elastic Kubernetes Cluster to manage the microservices and the pods.
+* AKS: AKS Kubernetes Cluster to manage the microservices and the pods.
 * Docker: Images for each microservice.
 * Traefik: I used Traefik as a loadbalancer with let's encrypt to reroute http traffic to https
   and distribute https requests evenly in the cluster. Also autoscale the pods if there is too much traffic.
